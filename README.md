@@ -138,10 +138,15 @@ You can use different output formats with the `-outmft` option:
 Often if we are working with many sequences, we want to make it easier to get the best results in an easy to read format. We can do this by limiting the number of results returned. Often this is performed by changing the number of alignments displayed and/or the e-value cut off.
 
 **LIMITING THE NUMBER OF ALIGNMENTS** ensures only the most relevant results are shown, reducing noise and making it easier to identify key findings. For example, setting the limit to display only the top 10 alignments can provide a quick overview of the most relevant matches.
+
 **E-VALUE CUTOFF**: the e-value measures the likelihood of obtaining a particular alignment by chance. A lower e-value threshold (e.g 1e-30) filters out less significant results, ensuring that only highly reliable matches are included in the output.
-    - These adjustments enhance the readability and allow for a more focused analysis of sequence alignments
-    - e.g ```blastn -query EcoliToxins.fasta -db reference -out blast_result.txt -num_alignments 1 -evalue 1e-30```
-    - The default value (10) is quite high and not recommended as it is too permissive and will likely return false positive hits
+    - These adjustments enhance the readability and allow for a more focused analysis of sequence alignments e.g:
+    
+```
+    blastn -query EcoliToxins.fasta -db reference -out blast_result.txt -num_alignments 1 -evalue 1e-30
+```
+    
+  The default value (10) is quite high and not recommended as it is too permissive and will likely return false positive hits
 
 ## More options and getting help
 
