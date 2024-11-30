@@ -196,3 +196,12 @@ blastp -query x.faa -subject y.faa -out results.tsv
 ```
 blastx -query nucl.faa -subject prot.faa -out result.txt
 ```
+
+## DATABASES
+**CARD**
+```
+https://card.mcmaster.ca/download/0/broadstreet-v3.3.0.tar.bz2
+```
+**NCBI Database**
+https://ftp.ncbi.nlm.nih.gov
+
