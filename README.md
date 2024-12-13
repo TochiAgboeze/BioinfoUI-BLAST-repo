@@ -210,7 +210,7 @@ https://card.mcmaster.ca/download/0/broadstreet-v3.3.0.tar.bz2
 For the CARD database when downloaded, please take note of the following while taking a look at the different files within the extracted directory:
 
 *FASTA:*
-Nucleotide and corresponding protein FASTA downloads are available as separate files for each model type.  For example, the `protein homolog model` and `nucleotide variant model` typesq contain sequences of antimicrobial resistance genes that do not include mutation as a determinant of resistance- these data are appropriate for BLAST analysis of metagenomic data or searches excluding secondary screening for resistance mutations. In contrast, the `protein variant model` and `nucleotide variant model` include reference wild type sequences used for mapping SNPs conferring antimicrobial resistance - without secondary mutation screening, analyses using these data will include false positives for antibiotic resistant gene variants or mutants.
+Nucleotide and corresponding protein FASTA downloads are available as separate files for each model type.  For example, the `protein homolog model` type contains sequences of antimicrobial resistance genes that do not include mutation as a determinant of resistance- these data are appropriate for BLAST analysis of metagenomic data or searches excluding secondary screening for resistance mutations. In contrast, the `protein variant model` includes reference wild type sequences used for mapping SNPs conferring antimicrobial resistance - without secondary mutation screening, analyses using these data will include false positives for antibiotic resistant gene variants or mutants.
 
 
 *INDEX FILES:*
