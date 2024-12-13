@@ -207,6 +207,21 @@ blastx -query nucl.faa -subject prot.faa -out result.txt
 ```
 https://card.mcmaster.ca/download/0/broadstreet-v3.3.0.tar.bz2
 ```
+For the CARD database when downloaded, please take note of the following while taking a look at the different files within the extracted directory:
+
+*FASTA:*
+Nucleotide and corresponding protein FASTA downloads are available as separate files for each model type.  For example, the `protein homolog model` and `nucleotide variant model` typesq contain sequences of antimicrobial resistance genes that do not include mutation as a determinant of resistance- these data are appropriate for BLAST analysis of metagenomic data or searches excluding secondary screening for resistance mutations. In contrast, the `protein variant model` and `nucleotide variant model` include reference wild type sequences used for mapping SNPs conferring antimicrobial resistance - without secondary mutation screening, analyses using these data will include false positives for antibiotic resistant gene variants or mutants.
+
+
+*INDEX FILES:*
+
+The file `aro_index.tsv` contains a list of ARO tagging of GenBank accessions stored in CARD.
+
+
+`aro_categories.tsv`: reflects AMR gene family, target drug class, and mechanism of resistance.
+
+`aro_categories_index.tsv`: reflects AMR gene family, target drug class, and mechanism of resistance, so GenBank accessions may have more than one cross-reference.
+
 **NCBI Database**
 https://ftp.ncbi.nlm.nih.gov
 
